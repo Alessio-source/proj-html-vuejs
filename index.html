@@ -42,6 +42,23 @@
         </div>
       </header>
 
+      <main>
+        <section class="info">
+          <h1>Welcome to Fable</h1>
+          <p>Fable daycare, preschool, and kindergarten</p>
+          <div class="">
+            <img src="img/images-alt/header_divider.png" alt="" class="divider">
+          </div>
+          <div class="card" v-for="element in cards">
+            <span :class="element.color">
+              <img :src="element.img" alt="">
+            </span>
+            <h2>{{ element.title }}</h2>
+            <p>{{ element.text }}</p>
+          </div>
+        </section>
+      </main>
+
     </div>
     <!-- /div per vue -->
 

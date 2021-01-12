@@ -2,15 +2,16 @@ var app = new Vue({
   el: "#app",
   data: {
     links: [],
+    cards: []
   },
   methods: {
-    getLinks: function() {
+    getData: function() {
       // il data viene preso da data.js
       this.links = data.links;
-      console.log(this.links);
+      this.cards = data.cards;
     }
   },
   created: function() {
-    this.getLinks();
+    this.getData();
   },
 })
