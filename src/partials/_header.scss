@@ -1,0 +1,40 @@
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $sugarcane;
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 150px;
+    height: 130px;
+  }
+  ul {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    li {
+      display: inline-block;
+      a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        text-decoration: none;
+        color: $butterflybush;
+        img {
+          margin-bottom: 20px;
+        }
+      }
+      .active {
+        background-color: $blazeorange;
+        color: white;
+        img {
+          filter: brightness(100);
+        }
+      }
+    }
+  }
+}

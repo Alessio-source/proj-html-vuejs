@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Fable</title>
+  </head>
+  <body>
+    <!-- div per vue -->
+    <div id="app">
+
+      <header>
+        <nav>
+          <img src="img/images-alt/logo.png" alt="Immagine logo fable" class="logo">
+          <ul>
+            <li v-for="element in links">
+              <a href="#" :class="{ active: element.isActive }">
+                <img :src="element.img" alt="">
+                <p>{{ element.text }}</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    </div>
+    <!-- /div per vue -->
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
