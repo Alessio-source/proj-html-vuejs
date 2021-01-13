@@ -56,15 +56,45 @@
         <section class="info">
           <h2>Welcome to Fable</h2>
           <p>Fable daycare, preschool, and kindergarten</p>
+
           <div class="">
             <img src="img/images-alt/header_divider.png" alt="" class="divider">
           </div>
+
           <div class="card" v-for="element in cards">
             <span :class="element.color">
               <img :src="element.img" alt="">
             </span>
             <h2>{{ element.title }}</h2>
             <p>{{ element.text }}</p>
+          </div>
+        </section>
+
+        <section class="slide-2">
+          <div class="box">
+            <button type="button" name="button" class="active">Overview</button>
+            <button type="button" name="button">Our Mission</button>
+            <p>Our philosophy is learning through play as we offer a simulating environment for children.</p>
+
+            <div class="specific">
+              <span><img src="img/images-alt/clock_alt.png" alt="Immagine orologio"></span>
+              <div class="">
+                <h3>Full Day sessions</h3>
+                <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
+              </div>
+            </div>
+
+            <div class="specific">
+              <span><img src="img/images-alt/diagram_alt.png" alt="Immagine diagramma"></span>
+              <div class="">
+                <h3>Varied Classes</h3>
+                <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+
           </div>
         </section>
       </main>

@@ -119,11 +119,10 @@ header .end a {
   color: white;
 }
 
-main {
-  padding: 30px;
-}
 main .info {
+  padding: 30px;
   text-align: center;
+  margin-bottom: 80px;
 }
 main .info h2 {
   font-weight: normal;
@@ -139,7 +138,7 @@ main .info .divider {
 }
 main .info .card {
   display: inline-block;
-  width: calc(100% / 4);
+  width: calc((100% / 4) - 80px);
 }
 main .info .card .orange {
   display: inline-block;
@@ -159,4 +158,65 @@ main .info .card h2 {
   font-weight: normal;
   font-size: 1.5em;
   color: #554e9e;
+}
+main .slide-2 {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #F5F5F5;
+}
+main .slide-2 .box {
+  max-width: 450px;
+}
+main .slide-2 .box .active {
+  position: relative;
+  background-color: #fe6601;
+  color: white;
+  border-bottom: none;
+}
+main .slide-2 .box .active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  height: 20px;
+  width: 20px;
+  background-color: #fe6601;
+}
+main .slide-2 .box button {
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 1.3em;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #A0A0A0;
+  color: #A0A0A0;
+}
+main .slide-2 .box button:not(:last-of-type) {
+  margin-right: 20px;
+}
+main .slide-2 .box > p {
+  color: #554e9e;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+main .slide-2 .box .specific {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+main .slide-2 .box .specific span {
+  background-color: #fe6601;
+  padding: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+main .slide-2 .box .specific h3 {
+  color: #554e9e;
+  font-size: 1.4em;
+}
+main .slide-2 .box .specific p {
+  color: #A0A0A0;
 }
