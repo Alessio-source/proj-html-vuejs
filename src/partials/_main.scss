@@ -78,15 +78,15 @@ main {
       > p {
         color: $butterflybush;
         font-size: 1.6em;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
       }
       .specific {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
         span {
           background-color: $blazeorange;
-          padding: 20px;
+          padding: 30px;
           border-radius: 50%;
           margin-right: 20px;
         }
@@ -96,6 +96,40 @@ main {
         }
         p {
           color: $grey;
+        }
+      }
+    }
+    .slide {
+      margin-left: 20px;
+      .img {
+        position: relative;
+        width: 500px;
+        height: 367px;
+        background-image: url("../img/images-alt/gallery_08-690x506.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        .prev {
+          @include button-slider2;
+          left: 0;
+        }
+        .next {
+          @include button-slider2;
+          right: 0;
+        }
+      }
+      .images {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 10px;
+        img {
+          width: calc((100% / 3) - 5px);
+        }
+        .active {
+          padding-bottom: 10px;
+          border-bottom: 3px solid $blazeorange;
         }
       }
     }
