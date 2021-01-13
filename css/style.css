@@ -47,6 +47,59 @@ header nav ul li .active {
 header nav ul li .active img {
   filter: brightness(100);
 }
+header .slider {
+  width: 100%;
+}
+header .slider .img-1 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/images-alt/slider_slide2_background.png");
+}
+header .slider .img-1 .box {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 300px;
+  font-size: 20px;
+}
+header .slider .img-1 .box p {
+  font-size: 2em;
+  color: #fe6601;
+  font-family: "Shadows Into Light", cursive;
+}
+header .slider .img-1 .box h1, header .slider .img-1 .box h2 {
+  color: #554e9e;
+  font-size: 3em;
+}
+header .slider .img-1 .box h2 {
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+header .slider .img-1 .box a {
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fe6601;
+  color: white;
+}
+header .slider .img-1 .bambino {
+  position: absolute;
+  right: 400px;
+  top: 20px;
+  z-index: 2;
+}
+header .slider .img-1 .bambina {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  z-index: 1;
+}
 header .end {
   display: flex;
   justify-content: space-around;
@@ -72,7 +125,7 @@ main {
 main .info {
   text-align: center;
 }
-main .info h1 {
+main .info h2 {
   font-weight: normal;
   font-size: 3.5em;
   color: #554e9e;
