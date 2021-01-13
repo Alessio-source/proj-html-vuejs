@@ -8,10 +8,25 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header nav {
+.container-space {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.container-start {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maxWidth {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header nav {
   background-color: #fefffe;
 }
 header nav .logo {
@@ -64,7 +79,6 @@ header .slider .img-1 .box {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 300px;
   font-size: 20px;
 }
 header .slider .img-1 .box p {
@@ -101,9 +115,6 @@ header .slider .img-1 .bambina {
   z-index: 1;
 }
 header .end {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 40px;
   background-color: #554e9e;
   color: white;
@@ -138,7 +149,7 @@ main .info .divider {
 }
 main .info .card {
   display: inline-block;
-  width: calc((100% / 4) - 80px);
+  width: calc(100% / 4);
 }
 main .info .card .orange {
   display: inline-block;
@@ -160,8 +171,6 @@ main .info .card h2 {
   color: #554e9e;
 }
 main .slide-2 {
-  display: flex;
-  justify-content: center;
   padding: 30px;
   background-color: #F5F5F5;
 }
@@ -219,9 +228,6 @@ main .slide-2 .box .specific h3 {
 }
 main .slide-2 .box .specific p {
   color: #A0A0A0;
-}
-main .slide-2 .slide {
-  margin-left: 20px;
 }
 main .slide-2 .slide .img {
   position: relative;

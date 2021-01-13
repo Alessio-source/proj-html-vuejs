@@ -22,38 +22,44 @@
 
       <header>
         <nav>
-          <img src="img/images-alt/logo.png" alt="Immagine logo fable" class="logo">
-          <ul>
-            <li v-for="element in links">
-              <a href="#" :class="{ active: element.isActive }">
-                <img :src="element.img" alt="">
-                <p>{{ element.text }}</p>
-              </a>
-            </li>
-          </ul>
+          <div class="container-space maxWidth">
+            <img src="img/images-alt/logo.png" alt="Immagine logo fable" class="logo">
+            <ul>
+              <li v-for="element in links">
+                <a href="#" :class="{ active: element.isActive }">
+                  <img :src="element.img" alt="">
+                  <p>{{ element.text }}</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <div class="slider">
           <div class="img-1">
-            <div class="box">
-              <p>Friendly Atmosphere</p>
-              <h1>Welcoming Place</h1>
-              <h2>For every child</h2>
-              <a href="#">Buy this theme now</a>
+            <div class="maxWidth container-start">
+              <div class="box">
+                <p>Friendly Atmosphere</p>
+                <h1>Welcoming Place</h1>
+                <h2>For every child</h2>
+                <a href="#">Buy this theme now</a>
+              </div>
+              <img src="img/images-alt/slider_slide2_img1.png" alt="Immagine bambino" class="bambino">
+              <img src="img/images-alt/slider_slide2_img2.png" alt="Immagine bambina" class="bambina">
             </div>
-            <img src="img/images-alt/slider_slide2_img1.png" alt="Immagine bambino" class="bambino">
-            <img src="img/images-alt/slider_slide2_img2.png" alt="Immagine bambina" class="bambina">
           </div>
         </div>
 
         <div class="end">
-          <p>How to Enroll Your Child to a class?</p>
-          <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+          <div class="maxWidth container-space">
+            <p>How to Enroll Your Child to a class?</p>
+            <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+          </div>
         </div>
       </header>
 
       <main>
-        <section class="info">
+        <section class="info maxWidth">
           <h2>Welcome to Fable</h2>
           <p>Fable daycare, preschool, and kindergarten</p>
 
@@ -61,48 +67,56 @@
             <img src="img/images-alt/header_divider.png" alt="" class="divider">
           </div>
 
-          <div class="card" v-for="element in cards">
-            <span :class="element.color">
-              <img :src="element.img" alt="">
-            </span>
-            <h2>{{ element.title }}</h2>
-            <p>{{ element.text }}</p>
+          <div class="container-space">
+
+            <div class="card" v-for="element in cards">
+              <span :class="element.color">
+                <img :src="element.img" alt="">
+              </span>
+              <h2>{{ element.title }}</h2>
+              <p>{{ element.text }}</p>
+            </div>
+
           </div>
         </section>
 
         <section class="slide-2">
-          <div class="box">
-            <button type="button" name="button" class="active">Overview</button>
-            <button type="button" name="button">Our Mission</button>
-            <p>Our philosophy is learning through play as we offer a simulating environment for children.</p>
+          <div class="maxWidth container-space">
 
-            <div class="specific">
-              <span><img src="img/images-alt/clock_alt.png" alt="Immagine orologio"></span>
-              <div class="">
-                <h3>Full Day sessions</h3>
-                <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
+            <div class="box">
+              <button type="button" name="button" class="active">Overview</button>
+              <button type="button" name="button">Our Mission</button>
+              <p>Our philosophy is learning through play as we offer a simulating environment for children.</p>
+
+              <div class="specific">
+                <span><img src="img/images-alt/clock_alt.png" alt="Immagine orologio"></span>
+                <div class="">
+                  <h3>Full Day sessions</h3>
+                  <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
+                </div>
+              </div>
+
+              <div class="specific">
+                <span><img src="img/images-alt/diagram_alt.png" alt="Immagine diagramma"></span>
+                <div class="">
+                  <h3>Varied Classes</h3>
+                  <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
+                </div>
               </div>
             </div>
 
-            <div class="specific">
-              <span><img src="img/images-alt/diagram_alt.png" alt="Immagine diagramma"></span>
-              <div class="">
-                <h3>Varied Classes</h3>
-                <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
+            <div class="slide">
+              <div class="img">
+                <button type="button" name="button" class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" name="button" class="next"><i class="fas fa-chevron-right"></i></button>
+              </div>
+              <div class="images">
+                <img src="img/images-alt/gallery_07-690x506.jpg" class="active" alt="Immagine bambine">
+                <img src="img/images-alt/gallery_01.jpg" alt="Immagine bambini">
+                <img src="img/images-alt/gallery_08-690x506.jpg" alt="Imaggine persona che sorride">
               </div>
             </div>
-          </div>
 
-          <div class="slide">
-            <div class="img">
-              <button type="button" name="button" class="prev"><i class="fas fa-chevron-left"></i></button>
-              <button type="button" name="button" class="next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <div class="images">
-              <img src="img/images-alt/gallery_07-690x506.jpg" class="active" alt="Immagine bambine">
-              <img src="img/images-alt/gallery_01.jpg" alt="Immagine bambini">
-              <img src="img/images-alt/gallery_08-690x506.jpg" alt="Imaggine persona che sorride">
-            </div>
           </div>
         </section>
       </main>

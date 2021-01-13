@@ -17,7 +17,7 @@ main {
     }
     .card {
       display: inline-block;
-      width: calc((100% / 4) - 80px);
+      width: calc(100% / 4);
       .orange {
         display: inline-block;
         margin-bottom: 20px;
@@ -40,8 +40,6 @@ main {
     }
   }
   .slide-2 {
-    display: flex;
-    justify-content: center;
     padding: 30px;
     background-color: $whitegreen;
     .box {
@@ -100,7 +98,6 @@ main {
       }
     }
     .slide {
-      margin-left: 20px;
       .img {
         position: relative;
         width: 500px;

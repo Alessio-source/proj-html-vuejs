@@ -7,3 +7,21 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.container-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-start {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maxWidth {
+  max-width: 1100px;
+  margin: 0 auto;
+}
