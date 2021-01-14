@@ -450,6 +450,42 @@ main .gallery .view .maxWidth a {
   color: white;
 }
 main .gallery .slider3 {
+  position: relative;
   height: 700px;
   overflow: hidden;
+}
+main .gallery .slider3 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .gallery .slider3 .box .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+main .gallery .slider3 .box p:not(:last-of-type) {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: lighter;
+  color: white;
+}
+main .gallery .slider3 .box .border {
+  width: 50px;
+  margin-top: 50px;
+  border-bottom: 1px solid white;
+}
+main .gallery .slider3 .box p:last-of-type {
+  margin-top: 20px;
+  color: white;
 }
