@@ -13,6 +13,7 @@ var app = new Vue({
       this.cards = data.cards;
       this.classes = data.classes;
       this.news = data.news;
+
     }
   },
   created: function() {
