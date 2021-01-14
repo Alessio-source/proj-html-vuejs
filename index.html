@@ -238,6 +238,37 @@
 
           </div>
         </section>
+
+        <section class="new">
+
+          <div class="maxWidth">
+            <h2>Welcome to Fable</h2>
+            <p>Fable daycare, preschool, and kindergarten</p>
+
+            <div class="">
+              <img src="img/images-alt/header_divider.png" alt="" class="divider">
+            </div>
+
+            <div class="news">
+
+              <div class="card" v-for="element in news">
+                <p>{{ element.data }}</p>
+                <div class="img" :style="{ 'background-image': 'url(' + element.img + ')' }">
+                  <a href="#">{{ element.number }}</a>
+                </div>
+                <h3>{{ element.title }}</h3>
+                <p>{{ element.text }}</p>
+                <div class="end">
+                  <p><img src="img/images-alt/author.png" alt=""> {{ element.author }}</p>
+                  <p><img src="img/images-alt/category.png" alt=""> {{ element.genre }}</p>
+                </div>
+              </div>
+
+            </div>
+            <a href="#" class="goBlog">Go to blog <i class="fas fa-chevron-right"></i></a>
+          </div>
+
+        </section>
       </main>
 
     </div>

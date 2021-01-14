@@ -86,5 +86,34 @@ data = {
       size: "20",
       img: "img/images-alt/class_04-690x506.jpg"
     }
+  ],
+  news: [
+    {
+      data: "October 3, 2014",
+      img: "img/images-alt/blog_09-300x180.jpg",
+      title: "Drawing and Painting Lessons",
+      text: "Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum",
+      number: "42",
+      author: "Anna Brown",
+      genre: "Events, Fun"
+    },
+    {
+      data: "October 3, 2014",
+      img: "img/images-alt/blog_10-300x180.jpg",
+      title: "Fall Parents Meeting Day",
+      text: "Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum",
+      number: "19",
+      author: "Anna Brown",
+      genre: "Dance, Education"
+    },
+    {
+      data: "September 20, 2014",
+      img: "img/images-alt/blog_08-300x180.jpg",
+      title: "Birthday in Kindergarten",
+      text: "Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum",
+      number: "22",
+      author: "Anna Brown",
+      genre: "Games, General"
+    }
   ]
 }

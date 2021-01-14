@@ -344,4 +344,77 @@ main {
       }
     }
   }
+  .new {
+    background-color: $sugarcane;
+    padding: 30px;
+    .maxWidth {
+      @include flex-center;
+      flex-direction: column;
+      h2 {
+        font-weight: normal;
+        font-size: 3.5em;
+        color: $butterflybush;
+      }
+      p {
+        color: $grey;
+      }
+      .divider {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      .news {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .card {
+          width: calc((100% / 3) - 10px);
+          .img {
+            position: relative;
+            margin: 20px 0;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            a {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              padding: 15px;
+              text-decoration: none;
+              font-size: 1.2em;
+              background-color: $blazeorange;
+              color: white;
+            }
+          }
+          h3 {
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 300;
+            color: $butterflybush;
+          }
+          > p:last-of-type {
+            &::after {
+              content: " [...]";
+            }
+            padding-bottom: 20px;
+            border-bottom: 1px solid $grey;
+          }
+          .end {
+            display: flex;
+            margin: 20px 0;
+            p {
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+      .goBlog {
+        margin: 10px 0 50px 0;
+        padding: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: $blazeorange;
+        color: white;
+      }
+    }
+  }
 }

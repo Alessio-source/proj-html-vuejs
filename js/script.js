@@ -3,7 +3,8 @@ var app = new Vue({
   data: {
     links: [],
     cards: [],
-    classes: []
+    classes: [],
+    news: []
   },
   methods: {
     getData: function() {
@@ -11,6 +12,7 @@ var app = new Vue({
       this.links = data.links;
       this.cards = data.cards;
       this.classes = data.classes;
+      this.news = data.news;
     }
   },
   created: function() {
