@@ -353,3 +353,70 @@ main .classes .container .container-space > .card img {
   width: calc((100% / 2) - 30px);
   flex-grow: 10;
 }
+main .lists {
+  padding: 30px;
+  background-color: #F5F5F5;
+}
+main .lists .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .lists .container .left,
+main .lists .container .right {
+  width: calc((100% / 2) - 10px);
+}
+main .lists .container .left h3 {
+  font-weight: normal;
+  font-size: 1.8em;
+  color: #554e9e;
+  margin-bottom: 50px;
+}
+main .lists .container .left p {
+  color: #A0A0A0;
+  margin-bottom: 50px;
+}
+main .lists .container .left ul {
+  list-style: none;
+}
+main .lists .container .left ul li {
+  color: #A0A0A0;
+  margin-bottom: 10px;
+}
+main .lists .container .left ul li img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+main .lists .container .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .lists .container .right .block {
+  width: calc((100% / 2) - 10px);
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .lists .container .right .block span {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+main .lists .container .right .block span img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .lists .container .right .block h3 {
+  margin: 15px 0;
+  font-size: 1.4em;
+  color: #554e9e;
+}
+main .lists .container .right .block p {
+  color: #A0A0A0;
+}

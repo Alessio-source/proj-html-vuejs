@@ -204,4 +204,73 @@ main {
       }
     }
   }
+  .lists {
+    padding: 30px;
+    background-color: #F5F5F5;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left,
+      .right {
+        width: calc((100% / 2) - 10px);
+      }
+      .left {
+        h3 {
+          font-weight: normal;
+          font-size: 1.8em;
+          color: $butterflybush;
+          margin-bottom: 50px;
+        }
+        p {
+          color: $grey;
+          margin-bottom: 50px;
+        }
+        ul {
+          list-style: none;
+          li {
+            color: $grey;
+            margin-bottom: 10px;
+            img {
+              margin-right: 10px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        .block {
+          width: calc((100% / 2) - 10px);
+          text-align: center;
+          margin-bottom: 20px;
+          span {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            img {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          h3 {
+            margin: 15px 0;
+            font-size: 1.4em;
+            color: $butterflybush;
+          }
+          p {
+            color: $grey;
+          }
+        }
+      }
+    }
+  }
 }
