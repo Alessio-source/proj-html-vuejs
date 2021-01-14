@@ -273,4 +273,39 @@ main {
       }
     }
   }
+  .gallery {
+    .photos {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      img {
+        width: calc(100% / 4);
+      }
+    }
+    .view {
+      padding: 50px 30px;
+      background-image: url("../img/images-alt/pattern.png");
+      .maxWidth {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        p {
+          font-size: 2em;
+          font-weight: lighter;
+        }
+        a {
+          padding: 15px;
+          border: 1px solid white;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+    }
+    .slider3 {
+      height: 700px;
+      overflow: hidden;
+    }
+  }
 }

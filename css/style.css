@@ -420,3 +420,36 @@ main .lists .container .right .block h3 {
 main .lists .container .right .block p {
   color: #A0A0A0;
 }
+main .gallery .photos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main .gallery .photos img {
+  width: calc(100% / 4);
+}
+main .gallery .view {
+  padding: 50px 30px;
+  background-image: url("../img/images-alt/pattern.png");
+}
+main .gallery .view .maxWidth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+main .gallery .view .maxWidth p {
+  font-size: 2em;
+  font-weight: lighter;
+}
+main .gallery .view .maxWidth a {
+  padding: 15px;
+  border: 1px solid white;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+main .gallery .slider3 {
+  height: 700px;
+  overflow: hidden;
+}
