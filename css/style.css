@@ -564,3 +564,7 @@ main .new .maxWidth .goBlog {
   background-color: #fe6601;
   color: white;
 }
+main .map iframe {
+  pointer-events: none;
+  cursor: default;
+}

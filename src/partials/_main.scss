@@ -417,4 +417,10 @@ main {
       }
     }
   }
+  .map {
+    iframe {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
 }
