@@ -3,6 +3,7 @@ main {
     padding: 30px;
     text-align: center;
     margin-bottom: 80px;
+    background-color: $sugarcane;
     h2 {
       font-weight: normal;
       font-size: 3.5em;
@@ -102,10 +103,7 @@ main {
         position: relative;
         width: 500px;
         height: 367px;
-        background-image: url("../img/images-alt/gallery_08-690x506.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat;
+        @include background-images("../img/images-alt/gallery_08-690x506.jpg");
         .prev {
           @include button-slider2;
           left: 0;
@@ -127,6 +125,81 @@ main {
         .active {
           padding-bottom: 10px;
           border-bottom: 3px solid $blazeorange;
+        }
+      }
+    }
+  }
+  .classes {
+    padding: 30px;
+    .container {
+      @include flex-center;
+      flex-direction: column;
+      h2 {
+        font-weight: normal;
+        font-size: 3.5em;
+        color: $butterflybush;
+      }
+      p {
+        color: $grey;
+      }
+      .divider {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      .container-space {
+        flex-wrap: wrap;
+        h3 {
+          font-weight: normal;
+          font-size: 2em;
+          color: $butterflybush;
+          margin-bottom: 50px;
+        }
+        > p {
+          margin-bottom: 50px;
+        }
+        .widthBlocks {
+          width: calc((100% / 2) - 10px);
+        }
+        > .card {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+
+          > .container-space {
+            margin-bottom: 20px;
+          }
+          .info {
+            width:  calc((100% / 2) + 30px);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            background-color: $victoria;
+            .white {
+              color: white;
+            }
+            .title {
+              font-size: 1.8em;
+            }
+            .data {
+              margin-top: 50px;
+              .mounth {
+                display: inline-block;
+                border-right: 1px solid white;
+                padding-right: 30px;
+              }
+              .class {
+                display: inline-block;
+                margin-left: 30px;
+              }
+            }
+          }
+          img {
+            height: 201px;
+            width:  calc((100% / 2) - 30px);
+            flex-grow: 10;
+          }
         }
       }
     }

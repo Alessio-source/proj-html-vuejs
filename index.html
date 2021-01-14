@@ -119,6 +119,49 @@
 
           </div>
         </section>
+
+        <section class="classes">
+          <div class="container maxWidth">
+            <h2>Our Classes</h2>
+            <p>Our preschool program has four dedicated classes</p>
+
+            <div class="">
+              <img src="img/images-alt/header_divider.png" alt="" class="divider">
+            </div>
+
+            <div class="container-space">
+              <h3 class="widthBlocks">We provided four classes with nine to twenty children each aged twelve mounth to five years of age.</h3>
+              <p class="widthBlocks">Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas</p>
+
+              <div class="widthBlocks card" v-for="element in classes">
+
+                <div class="info">
+                  <p class="white title">{{ element.title }}</p>
+                  <p>{{ element.name }}</p>
+                  <div class="data">
+
+                    <div class="mounth">
+                      <p class="white">{{ element.data }}</p>
+                      <p>{{ element.time }}</p>
+                    </div>
+
+                    <div class="class">
+                      <p class="white">{{ element.size }}</p>
+                      <p>Classe size</p>
+                    </div>
+
+                  </div>
+                </div>
+                <img :src="element.img" alt="">
+
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </section>
       </main>
 
     </div>

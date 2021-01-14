@@ -134,6 +134,7 @@ main .info {
   padding: 30px;
   text-align: center;
   margin-bottom: 80px;
+  background-color: #fefffe;
 }
 main .info h2 {
   font-weight: normal;
@@ -275,4 +276,80 @@ main .slide-2 .slide .images img {
 main .slide-2 .slide .images .active {
   padding-bottom: 10px;
   border-bottom: 3px solid #fe6601;
+}
+main .classes {
+  padding: 30px;
+}
+main .classes .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .classes .container h2 {
+  font-weight: normal;
+  font-size: 3.5em;
+  color: #554e9e;
+}
+main .classes .container p {
+  color: #A0A0A0;
+}
+main .classes .container .divider {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+main .classes .container .container-space {
+  flex-wrap: wrap;
+}
+main .classes .container .container-space h3 {
+  font-weight: normal;
+  font-size: 2em;
+  color: #554e9e;
+  margin-bottom: 50px;
+}
+main .classes .container .container-space > p {
+  margin-bottom: 50px;
+}
+main .classes .container .container-space .widthBlocks {
+  width: calc((100% / 2) - 10px);
+}
+main .classes .container .container-space > .card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+main .classes .container .container-space > .card > .container-space {
+  margin-bottom: 20px;
+}
+main .classes .container .container-space > .card .info {
+  width: calc((100% / 2) + 30px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #4c4a9b;
+}
+main .classes .container .container-space > .card .info .white {
+  color: white;
+}
+main .classes .container .container-space > .card .info .title {
+  font-size: 1.8em;
+}
+main .classes .container .container-space > .card .info .data {
+  margin-top: 50px;
+}
+main .classes .container .container-space > .card .info .data .mounth {
+  display: inline-block;
+  border-right: 1px solid white;
+  padding-right: 30px;
+}
+main .classes .container .container-space > .card .info .data .class {
+  display: inline-block;
+  margin-left: 30px;
+}
+main .classes .container .container-space > .card img {
+  height: 201px;
+  width: calc((100% / 2) - 30px);
+  flex-grow: 10;
 }

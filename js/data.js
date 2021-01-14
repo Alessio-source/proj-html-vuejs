@@ -52,5 +52,39 @@ data = {
       "text": "Elipsis magna a terminal nulla elementum morbi elite forte maecenas est magna etos interdum vitae est."
     }
 
+  ],
+  classes: [
+    {
+      title: "Little lambs",
+      name: "Class name",
+      data: "12-13",
+      time: "Mounth olds",
+      size: "9",
+      img: "img/images-alt/class_01-690x506.jpg"
+    },
+    {
+      title: "Bouncy bear",
+      name: "Class name",
+      data: "2-3",
+      time: "Years Old",
+      size: "12",
+      img: "img/images-alt/class_02-690x506.jpg"
+    },
+    {
+      title: "Tenderhearts",
+      name: "Class name",
+      data: "3-4",
+      time: "Years Old",
+      size: "15",
+      img: "img/images-alt/class_03-690x506.jpg"
+    },
+    {
+      title: "Shining Stars",
+      name: "Class name",
+      data: "4-5",
+      time: "Years Old",
+      size: "20",
+      img: "img/images-alt/class_04-690x506.jpg"
+    }
   ]
 }
